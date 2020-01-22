@@ -270,18 +270,6 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
                     return;
                 }
             }
-
-            runOnUiThread(() -> {
-                synchronized (this.syncSessionProgress) {
-//                    MaterialFactory.makeOpaqueWithColor(this, new Color(
-//                            this.recommendedSessionProgress,
-//                            this.recommendedSessionProgress,
-//                            this.recommendedSessionProgress))
-//                            .thenAccept(material -> {
-//                                this.nodeRenderable.setMaterial(material);
-//                            });
-                }
-            });
         });
 
         this.cloudSession.getConfiguration().setAccountId("bf4c28bb-e473-4f01-a751-e5bead008f99");
@@ -295,22 +283,12 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
         CloudSpatialAnchor cloudAnchor = new CloudSpatialAnchor();
         cloudAnchor.setLocalAnchor(anchor);
         Toast.makeText(getApplicationContext(), "Anchor created at "+cloudAnchor.getLocalAnchor(), Toast.LENGTH_SHORT).show();
-//        MaterialFactory.makeOpaqueWithColor(this, new Color(
-//                this.recommendedSessionProgress,
-//                this.recommendedSessionProgress,
-//                this.recommendedSessionProgress))
-//                .thenAccept(material -> {
-//                    this.nodeRenderable = ShapeFactory.makeSphere(0.1f, new Vector3(0.0f, 0.15f, 0.0f), material);
-//                    this.anchorNode.setRenderable(nodeRenderable);
-//                    this.anchorNode.setParent(arFragment.getArSceneView().getScene());
-//                });
         uploadCloudAnchorAsync(cloudAnchor)
                 .thenAccept(id -> {
                     this.anchorId = id;
                     Log.i("ASAInfo", String.format("Cloud Anchor created: %s", this.anchorId));
                     runOnUiThread(() -> {
                         Log.d("test3","uploading");
-                        Toast.makeText(getApplicationContext(), "UPLOADEDDDDD ", Toast.LENGTH_SHORT).show();
                     });
                 });
     }
@@ -343,7 +321,6 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
 
                 this.cloudSession.createAnchorAsync(anchor).get();
                 Log.d("test2.5","stored2");
-                Toast.makeText(this, "YELLOW!", Toast.LENGTH_LONG).show();
             } catch (InterruptedException | ExecutionException e) {
                 Log.e("ASAError", e.toString());
                 throw new RuntimeException(e);
