@@ -1,9 +1,6 @@
-package com.googlecreativelab.drawar;
+package com.flowlines.drawar;
 
 import java.util.ArrayList;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicReference;
-
 import javax.vecmath.Vector2f;
 import javax.vecmath.Vector3f;
 
