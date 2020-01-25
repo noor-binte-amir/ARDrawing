@@ -145,6 +145,7 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
     private float recommendedSessionProgress = 0f;
     private CloudSpatialAnchorSession cloudSession;
 
+    private Anchor anchor;
     CloudSpatialAnchor cloudAnchor;
     private String anchorId = null;
     private boolean scanningForUpload = false;
@@ -275,8 +276,11 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
         this.cloudSession.addAnchorLocatedListener(args -> {
             if (args.getStatus() == LocateAnchorStatus.Located)
             {
-                this.cloudAnchor = args.getAnchor();
-                Log.d("testlocate", "Anchor located" + this.cloudAnchor.getIdentifier());
+//                this.cloudAnchor = args.getAnchor();
+//                cloudAnchor = new CloudSpatialAnchor();
+//                cloudAnchor.setLocalAnchor(anchor);
+//                this.anchorId = null;
+//                Log.d("testlocate", "Anchor located" + this.cloudAnchor.getIdentifier());
             }
         });
 
@@ -286,8 +290,19 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
     }
 
     protected void handleTap() {
+        if (this.anchorId != null) {
+            this.anchor.detach();
+//            this.anchor.setParent(null);
+            this.anchor = null;
+            Log.d("test", "detach");
+            initializeSession();
+//            AnchorLocateCriteria criteria = new AnchorLocateCriteria();
+//            criteria.setIdentifiers(new String[]{this.anchorId});
+//            cloudSession.createWatcher(criteria);
+            return;
+        }
         Camera camera = mFrame.getCamera();
-        Anchor anchor =  mSession.createAnchor(camera.getPose());
+        this.anchor =  mSession.createAnchor(camera.getPose());
         cloudAnchor = new CloudSpatialAnchor();
         cloudAnchor.setLocalAnchor(anchor);
         Toast.makeText(getApplicationContext(), "Anchor created at "+cloudAnchor.getLocalAnchor(), Toast.LENGTH_SHORT).show();
@@ -796,16 +811,6 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
             lastTouch.set(new Vector2f(tap.getX(), tap.getY()));
             bTouchDown.set(true);
             bNewStroke.set(true);
-            //<---------------------------------------------------------------------------------
-            if(bIsFirstTap.get()){
-                //---------------------------------------------------------------------------------
-                initializeSession();
-                //---------------------------------------------------------------------------------
-                handleTap();
-                Log.d("test1","firsttap");
-                bIsFirstTap.set(false);
-            }
-            //---------------------------------------------------------------------------------
             return true;
         } else if (tap.getAction() == MotionEvent.ACTION_MOVE || tap.getAction() == MotionEvent.ACTION_POINTER_DOWN) {
             lastTouch.set(new Vector2f(tap.getX(), tap.getY()));
@@ -875,20 +880,22 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
 
     //<--------------------------------------------------------------------------------
     public void onClickSave(View view) {
+        initializeSession();
+        handleTap();
+        Log.d("test1","firsttap");
+
         final SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         Drawing drawing = new Drawing();
         drawing.strokes = mStrokes;
         drawing.position = lastTouch.get();
         sharedPref.edit().putString("drawing", gson.toJson(drawing)).apply();
+        Log.d("drawing length",Integer.toString(gson.toJson(drawing).length()));
         bClearDrawing.set(true);
     }
 
     public void onClickRetrieve(View view) {
-        initializeSession();
-        AnchorLocateCriteria criteria = new AnchorLocateCriteria();
-        criteria.setIdentifiers(new String[]{this.anchorId});
-        cloudSession.createWatcher(criteria);
+        handleTap();
         final SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         Drawing drawing_retrieved = gson.fromJson(sharedPref.getString("drawing", ""),Drawing.class);
@@ -896,5 +903,4 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
         lastTouch.set(drawing_retrieved.position);
         bNewStroke.set(true);
     }
-    //---------------------------------------------------------------------------------
 }
