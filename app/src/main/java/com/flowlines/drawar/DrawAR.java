@@ -20,9 +20,6 @@ import com.flowlines.drawar.rendering.BackgroundRenderer;
 import com.flowlines.drawar.rendering.LineShaderRenderer;
 import com.flowlines.drawar.rendering.LineUtils;
 import com.google.ar.core.Anchor;
-import com.google.ar.core.HitResult;
-import com.google.ar.core.Plane;
-import com.google.ar.core.Pose;
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.gson.Gson;
 import android.app.AlertDialog;
@@ -59,8 +56,10 @@ import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException;
 import com.google.gson.GsonBuilder;
 import com.microsoft.CloudServices;
+import com.microsoft.azure.spatialanchors.AnchorLocateCriteria;
 import com.microsoft.azure.spatialanchors.CloudSpatialAnchor;
 import com.microsoft.azure.spatialanchors.CloudSpatialAnchorSession;
+import com.microsoft.azure.spatialanchors.LocateAnchorStatus;
 import com.microsoft.azure.spatialanchors.SessionLogLevel;
 
 import java.util.ArrayList;
@@ -146,6 +145,7 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
     private float recommendedSessionProgress = 0f;
     private CloudSpatialAnchorSession cloudSession;
 
+    CloudSpatialAnchor cloudAnchor;
     private String anchorId = null;
     private boolean scanningForUpload = false;
     private final Object syncSessionProgress = new Object();
@@ -272,6 +272,14 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
             }
         });
 
+        this.cloudSession.addAnchorLocatedListener(args -> {
+            if (args.getStatus() == LocateAnchorStatus.Located)
+            {
+                this.cloudAnchor = args.getAnchor();
+                Log.d("testlocate", "Anchor located" + this.cloudAnchor.getIdentifier());
+            }
+        });
+
         this.cloudSession.getConfiguration().setAccountId("bf4c28bb-e473-4f01-a751-e5bead008f99");
         this.cloudSession.getConfiguration().setAccountKey("ZWCGpgURznvP+sNukONKNaX8kAsk4Pi9DGDo08ZCvPg=");
         this.cloudSession.start();
@@ -280,7 +288,7 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
     protected void handleTap() {
         Camera camera = mFrame.getCamera();
         Anchor anchor =  mSession.createAnchor(camera.getPose());
-        CloudSpatialAnchor cloudAnchor = new CloudSpatialAnchor();
+        cloudAnchor = new CloudSpatialAnchor();
         cloudAnchor.setLocalAnchor(anchor);
         Toast.makeText(getApplicationContext(), "Anchor created at "+cloudAnchor.getLocalAnchor(), Toast.LENGTH_SHORT).show();
         uploadCloudAnchorAsync(cloudAnchor)
@@ -877,6 +885,10 @@ public class DrawAR extends AppCompatActivity implements GLSurfaceView.Renderer,
     }
 
     public void onClickRetrieve(View view) {
+        initializeSession();
+        AnchorLocateCriteria criteria = new AnchorLocateCriteria();
+        criteria.setIdentifiers(new String[]{this.anchorId});
+        cloudSession.createWatcher(criteria);
         final SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         Drawing drawing_retrieved = gson.fromJson(sharedPref.getString("drawing", ""),Drawing.class);
