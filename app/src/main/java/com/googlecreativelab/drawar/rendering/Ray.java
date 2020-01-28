@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.flowlines.drawar.rendering;
+package com.googlecreativelab.drawar.rendering;
 
 import javax.vecmath.Vector3f;
 

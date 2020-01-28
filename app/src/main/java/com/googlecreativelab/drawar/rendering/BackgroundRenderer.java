@@ -12,11 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.flowlines.drawar.rendering;
+package com.googlecreativelab.drawar.rendering;
 
-import com.flowlines.drawar.R;
 import com.google.ar.core.Frame;
 import com.google.ar.core.Session;
+import com.googlecreativelab.drawar.R;
 
 import android.content.Context;
 import android.opengl.GLES11Ext;
@@ -122,8 +122,8 @@ public class BackgroundRenderer {
 
     /**
      * Draws the AR background image.  The image will be drawn such that virtual content rendered
-     * with the matrices provided by {Frame#getViewMatrix(float[], int)} and
-     * {Session#getProjectionMatrix(float[], int, float, float)} will accurately follow
+     * with the matrices provided by {@link Frame#getViewMatrix(float[], int)} and
+     * {@link Session#getProjectionMatrix(float[], int, float, float)} will accurately follow
      * static physical objects.  This must be called <b>before</b> strokes virtual content.
      *
      * @param frame The last {@code Frame} returned by {@link Session#update()}.

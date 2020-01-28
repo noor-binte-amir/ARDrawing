@@ -12,17 +12,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.flowlines.drawar.rendering;
+package com.googlecreativelab.drawar.rendering;
 
 
+import com.googlecreativelab.drawar.R;
 
 import android.content.Context;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.util.Log;
-
-import com.flowlines.drawar.R;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

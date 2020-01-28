@@ -13,12 +13,10 @@
  * limitations under the License.
  */
  
- package com.flowlines.drawar.rendering;
+ package com.googlecreativelab.drawar.rendering;
 
 import android.opengl.Matrix;
-
-import com.flowlines.drawar.AppSettings;
-
+import com.googlecreativelab.drawar.AppSettings;
 import javax.vecmath.Vector2f;
 import javax.vecmath.Vector3f;
 

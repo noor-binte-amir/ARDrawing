@@ -14,11 +14,8 @@
  * limitations under the License.
  */
 
-package com.flowlines.drawar;
+package com.googlecreativelab.drawar;
 
-import com.flowlines.drawar.rendering.BackgroundRenderer;
-import com.flowlines.drawar.rendering.LineShaderRenderer;
-import com.flowlines.drawar.rendering.LineUtils;
 import com.google.ar.core.Anchor;
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.gson.Gson;
@@ -55,6 +52,9 @@ import com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException;
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException;
 import com.google.gson.GsonBuilder;
+import com.googlecreativelab.drawar.rendering.BackgroundRenderer;
+import com.googlecreativelab.drawar.rendering.LineShaderRenderer;
+import com.googlecreativelab.drawar.rendering.LineUtils;
 import com.microsoft.CloudServices;
 import com.microsoft.azure.spatialanchors.AnchorLocateCriteria;
 import com.microsoft.azure.spatialanchors.CloudSpatialAnchor;
