@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="ab305bf8-b966-4df8-9084-393f77945b18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -27,6 +28,9 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/DrawAR.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/DrawAR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
+=======
+    <list default="true" id="ab305bf8-b966-4df8-9084-393f77945b18" name="Default Changelist" comment="" />
+>>>>>>> parent of 97b8506... upgrade
 =======
     <list default="true" id="ab305bf8-b966-4df8-9084-393f77945b18" name="Default Changelist" comment="" />
 >>>>>>> parent of 97b8506... upgrade
@@ -51,6 +55,7 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/Drawing.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -58,6 +63,8 @@
               <folding>
                 <element signature="imports" expanded="true" />
 =======
+=======
+>>>>>>> parent of 97b8506... upgrade
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/rendering/BackgroundRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -74,6 +81,9 @@
               <folding>
                 <element signature="e#9074#9075#0" expanded="true" />
                 <element signature="e#9126#9127#0" expanded="true" />
+<<<<<<< HEAD
+>>>>>>> parent of 97b8506... upgrade
+=======
 >>>>>>> parent of 97b8506... upgrade
               </folding>
             </state>
@@ -81,6 +91,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/DrawAR.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,6 +104,8 @@
                 <element signature="e#29159#29160#0" expanded="true" />
                 <element signature="e#29206#29207#0" expanded="true" />
 =======
+=======
+>>>>>>> parent of 97b8506... upgrade
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/DrawAR.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -132,6 +145,9 @@
               <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+>>>>>>> parent of 97b8506... upgrade
+=======
 >>>>>>> parent of 97b8506... upgrade
               </folding>
             </state>
@@ -142,9 +158,12 @@
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="325">
               <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
 =======
+=======
+>>>>>>> parent of 97b8506... upgrade
             <state relative-caret-position="114">
               <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
             </state>
@@ -156,6 +175,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
               <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+<<<<<<< HEAD
+>>>>>>> parent of 97b8506... upgrade
+=======
 >>>>>>> parent of 97b8506... upgrade
             </state>
           </provider>
@@ -173,7 +195,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 97b8506... upgrade
       <find>activity</find>
       <find>gson</find>
       <find>addstr</find>
@@ -205,6 +230,7 @@
       <find>test2.</find>
       <find>test3</find>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <find>test2</find>
       <find>initializeSession</find>
       <find>handleTap()</find>
@@ -219,6 +245,8 @@
       <find>handle</find>
 =======
 >>>>>>> parent of 97b8506... upgrade
+=======
+>>>>>>> parent of 97b8506... upgrade
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -227,6 +255,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/Drawing.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/DrawAR.java" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/AppSettings.java" />
@@ -243,6 +272,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/rendering/LineUtils.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/flowlines/drawar/DrawAR.java" />
+=======
+>>>>>>> parent of 97b8506... upgrade
 =======
 >>>>>>> parent of 97b8506... upgrade
       </list>
@@ -270,14 +301,20 @@
             </path>
             <path>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="ARDrawing" type="1abcf292:AndroidViewProjectNode" />
 =======
+=======
+>>>>>>> parent of 97b8506... upgrade
               <item name="ar-drawing-java-master" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="ar-drawing-java-master" type="1abcf292:AndroidViewProjectNode" />
+<<<<<<< HEAD
+>>>>>>> parent of 97b8506... upgrade
+=======
 >>>>>>> parent of 97b8506... upgrade
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
@@ -289,6 +326,7 @@
               <item name="drawar" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <item name="ARDrawing" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -320,6 +358,11 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
 >>>>>>> parent of 97b8506... upgrade
+=======
+              <item name="ar-drawing-java-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+>>>>>>> parent of 97b8506... upgrade
             </path>
             <path>
               <item name="ar-drawing-java-master" type="1abcf292:AndroidViewProjectNode" />
@@ -336,7 +379,10 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
+=======
+>>>>>>> parent of 97b8506... upgrade
 =======
 >>>>>>> parent of 97b8506... upgrade
     </panes>
@@ -505,10 +551,18 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3290469" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32980332" />
+>>>>>>> parent of 97b8506... upgrade
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -516,15 +570,27 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32936078" />
       <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.7314675" visible="true" weight="0.42389524" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32827735" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.7314675" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.3289689" />
+>>>>>>> parent of 97b8506... upgrade
       <window_info anchor="bottom" id="Find" order="3" sideWeight="0.49621785" weight="0.1603928" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49924356" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.2685325" side_tool="true" weight="0.3289689" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49621785" weight="0.32827735" />
       <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32569557" />
+=======
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49621785" weight="0.3289689" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.3289689" />
+>>>>>>> parent of 97b8506... upgrade
       <window_info anchor="bottom" id="Debug" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -581,6 +647,7 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b5d339f7f0ec6da94c2b393f5236b336/core-1.0.0/jars/classes.jar!/com/google/ar/core/Session.class">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="198">
           <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
         </state>
@@ -589,6 +656,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/rendering/BackgroundRenderer.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/rendering/LineShaderRenderer.java" />
 =======
+=======
+>>>>>>> parent of 97b8506... upgrade
         <state relative-caret-position="1309">
           <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
         </state>
@@ -610,6 +679,7 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/Drawing.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -729,10 +799,55 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/Drawing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/BiquadFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/rendering/LineShaderRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4080">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="32" />
+          <folding>
+            <element signature="e#9074#9075#0" expanded="true" />
+            <element signature="e#9126#9127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/rendering/BackgroundRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> parent of 97b8506... upgrade
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-27/android.jar!/java/util/concurrent/atomic/AtomicReference.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -791,6 +906,35 @@
             <element signature="e#28972#28973#0" expanded="true" />
             <element signature="e#29159#29160#0" expanded="true" />
             <element signature="e#29206#29207#0" expanded="true" />
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3586244769508f7998e36385f7a40fd4/spatialanchors_java-1.3.0/jars/classes.jar!/com/microsoft/azure/spatialanchors/CloudSpatialAnchorSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="271" column="10" selection-start-line="271" selection-start-column="10" selection-end-line="271" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/googlecreativelab/drawar/DrawAR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="350" column="48" lean-forward="true" selection-start-line="350" selection-start-column="48" selection-end-line="350" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#27972#27973#0" expanded="true" />
+            <element signature="e#28291#28292#0" expanded="true" />
+            <element signature="e#30017#30018#0" expanded="true" />
+            <element signature="e#30072#30073#0" expanded="true" />
+            <element signature="e#30259#30260#0" expanded="true" />
+            <element signature="e#30306#30307#0" expanded="true" />
+            <element signature="e#30094#30095#0" expanded="true" />
+            <element signature="e#31882#31883#0" expanded="true" />
+            <element signature="e#32341#32342#0" expanded="true" />
+            <element signature="e#32427#32428#0" expanded="true" />
+            <element signature="e#32588#32589#0" expanded="true" />
+>>>>>>> parent of 97b8506... upgrade
           </folding>
         </state>
       </provider>
